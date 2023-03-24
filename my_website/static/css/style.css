@@ -1,20 +1,23 @@
-.effect:hover {
-    background-color: rosybrown;
-    transition: 2s;
+.mydiv {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(orange, orchid);
 }
 
-a:link {
-    color: cadetblue;
+.spinner {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 20px solid #ccc;
+  border-top-color: #333;
+  animation: spin 1s ease-in-out infinite;
 }
 
-a:visited {
-    color: rosybrown;
-}
-
-a:hover {
-    color: #067588;
-}
-
-a:nth-child(1) {
-    color: #FFFFFF;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

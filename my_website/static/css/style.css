@@ -2,6 +2,7 @@ table {
     color: #cccccc;
     border-style: solid;
     border-collapse: collapse;
+    padding: 10px;
 }
 
 td {
@@ -11,20 +12,9 @@ td {
     height: 50px;
 }
 
-.spinner {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 20px solid #ccc;
-    border-top-color: #333;
-    animation: spin 1s ease-in-out infinite;
-}
+div {
+    display: inline;
+    color: #cccccc;
+    margin: 0;
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }

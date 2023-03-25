@@ -1,20 +1,12 @@
-table {
-    color: #cccccc;
-    border-style: solid;
-    border-collapse: collapse;
-    padding: 10px;
+.div-outer {
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    padding: 20px;
 }
 
-td {
-    border-style: solid;
-    border-width: 2px;
-    width: 200px;
-    height: 50px;
-}
-
-div {
-    display: inline;
-    color: #cccccc;
-    margin: 0;
-
+.div-inner {
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
 }

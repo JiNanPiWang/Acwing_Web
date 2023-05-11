@@ -44,6 +44,32 @@
         .user-card-body-info-reputation {
             font-size: 12px;
             color: rgb(131, 140, 149);
+            height: 17.8px;
+            width: 147px;
+        }
+        .user-card-body-info-reputation-score {
+            color: rgb(106, 115, 124);
+            font-weight: bold;
+            margin: 0 2px 0 0
+        }
+        .user-card-body-info-reputation-badge {
+            margin: 0 3px 0 2px;
+            /*.badgecount 为内联元素，默认情况下会产生一些空白间隔。*/
+            /*你可以通过将 .badgecount 的父级元素的字体大小设置为 0，然后再将 .badgecount 的字体大小设置回所需值来解决这个问题。*/
+            font-size: 0;
+        }
+        .user-card-body-info-reputation-badge .badge {
+            margin: 0 3px 0 2px;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            top: -0.5px;
+        }
+        .user-card-body-info-reputation-badge .badgecount {
+            font-size: 12px;
         }
     </style>
 </head>
@@ -62,10 +88,19 @@
                 aCuria
             </div>
             <div class="user-card-body-info-reputation">
-                <span style="color: rgb(106, 115, 124); font-weight: bold">6,895</span>
-                13
-                53
-                89
+                <span class="user-card-body-info-reputation-score">6,895</span>
+                <span class="user-card-body-info-reputation-badge">
+                    <span class="badge" style="background-color: #fdcb01"></span>
+                    <span class="badgecount">13</span>
+                </span>
+                <span class="user-card-body-info-reputation-badge">
+                    <span class="badge" style="background-color: #b3b7bb"></span>
+                    <span class="badgecount">53</span>
+                </span>
+                <span class="user-card-body-info-reputation-badge">
+                    <span class="badge" style="background-color: #d0a583"></span>
+                    <span class="badgecount">89</span>
+                </span>
             </div>
         </div>
     </div>

@@ -5,20 +5,27 @@
     height: 100vh;
     margin: 0 auto;
     padding: 10px;
+
+    /*
+    如果您在 .container 中没有设置 align-items: flex-start;，
+    并且在 .row 或 .col 中设置了 align-items: flex-start;，
+    则 .row 或 .col 的设置将被覆盖，并且 .container 的默认对齐方式
+    （即 stretch）将应用于该行或列。
+    */
+    align-items: flex-start;
 }
 
 .row {
     display: flex;
     flex-basis: 100%;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
 }
 
 .col {
     display: flex;
-    flex-basis: calc(100% / 3);
+    /*flex-basis: calc(100% / 3);*/
     height: 50px;
     justify-content: center;
-    align-items: center;
 
     background-color: lightsalmon;
     border: 1px solid gray;
@@ -26,14 +33,51 @@
     font-size: 30px;
 }
 
-.col1 {
-    flex-basis: calc(100% / 6);
+/* -几代表几份 */
+.col-md-1 {
+    flex-basis: calc(100% / 12);
 }
 
-.col2 {
-    flex-basis: calc(200% / 6);
+.col-md-2 {
+    flex-basis: calc(100% * 2 / 12);
 }
 
-.col3 {
-    flex-basis: calc(300% / 6);
+.col-md-3 {
+    flex-basis: calc(100% * 3 / 12);
+}
+
+.col-md-4 {
+    flex-basis: calc(100% * 4 / 12);
+}
+
+.col-md-5 {
+    flex-basis: calc(100% * 5 / 12);
+}
+
+.col-md-6 {
+    flex-basis: calc(100% * 6 / 12);
+}
+
+.col-md-7 {
+    flex-basis: calc(100% * 7 / 12);
+}
+
+.col-md-8 {
+    flex-basis: calc(100% * 8 / 12);
+}
+
+.col-md-9 {
+    flex-basis: calc(100% * 9 / 12);
+}
+
+.col-md-10 {
+    flex-basis: calc(100% * 10 / 12);
+}
+
+.col-md-11 {
+    flex-basis: calc(100% * 11 / 12);
+}
+
+.col-md-12 {
+    flex-basis: calc(100% * 12 / 12);
 }

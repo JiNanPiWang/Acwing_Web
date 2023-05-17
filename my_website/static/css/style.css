@@ -1,4 +1,5 @@
 .container {
+    display: flex;
     background-color: lightgray;
     width: 80%;
     height: 100vh;
@@ -8,6 +9,7 @@
 
 .row {
     display: flex;
+    flex-basis: 100%;
     /*flex-wrap: wrap;*/
 }
 
@@ -24,6 +26,14 @@
     font-size: 30px;
 }
 
-.col-sm-1 {
+.col1 {
+    flex-basis: calc(100% / 6);
+}
 
+.col2 {
+    flex-basis: calc(200% / 6);
+}
+
+.col3 {
+    flex-basis: calc(300% / 6);
 }

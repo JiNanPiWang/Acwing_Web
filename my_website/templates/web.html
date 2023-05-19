@@ -11,17 +11,40 @@
     <title>Acwing-Web应用课</title>
 
     <link rel="stylesheet" href="/static/css/style.css">
-<!--    <link rel="stylesheet" href="/static/third_party/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">-->
-<!--    <script src="/static/third_party/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="/static/third_party/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <script src="/static/third_party/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
 
 </head>
 
 <body style="background: #2b2d30">
 <div class="container">
     <div class="row">
-        <div class="col col-md-6 col-sm-12">账号</div>
-        <div class="col col-md-6 col-sm-12">密码</div>
-        <div class="col col-md-12 col-sm-12">个人简介</div>
+        <div class="col-md-6 col-xs-12">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="电子邮箱"
+                       aria-describedby="emailHelp">
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                          placeholder="个人简介"></textarea>
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <button type="button" class="btn btn-success">提交</button>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <button type="button" class="btn btn-secondary">取消</button>
+        </div>
     </div>
 </div>
 </body>
